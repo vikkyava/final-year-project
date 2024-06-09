@@ -1,8 +1,10 @@
-
+import Slideshow from '../components/Slideshow';
 
 
 function HomePage() {
-    return <div>Home Page</div>;
+    return <>
+        <Slideshow />
+    </>;
 }
 
 export default HomePage;

@@ -1,0 +1,72 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    outline: 1px solid red;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.navbtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.prevbtn {
+    left: 10px;
+}
+
+.nextbtn {
+    right: 10px;
+}
+
+.navbtn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
