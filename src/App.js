@@ -9,21 +9,22 @@ import ResearchPage from './pages/Research';
 import ResoursePage from './pages/Resources';
 import StaffPage from './pages/Staff';
 import MainNavigation from './components/layout/MainNavigation';
-
+import Footer from './components/layout/Footer';
 
 function App() {
-  return <div>
+  return <div className='w-full max-w-6xl mx-auto'>
     <MainNavigation />
     <Routes>
-      <Route path='/' element={ <HomePage /> } />
-      <Route path='/about' element={ <AboutPage /> } />
-      <Route path='/courses' element={ <CoursePage /> } />
-      <Route path='/news-and-events' element={ <EventPage /> } />
-      <Route path='/gallery' element={ <GalleryPage /> } />
-      <Route path='/research' element={ <ResearchPage /> } />
-      <Route path='/resourses' element={ <ResoursePage /> } />
-      <Route path='/staffs' element={ <StaffPage /> } />
+      <Route path='/' element={<HomePage />} />
+      <Route path='/about' element={<AboutPage />} />
+      <Route path='/courses' element={<CoursePage />} />
+      <Route path='/news-and-events' element={<EventPage />} />
+      <Route path='/gallery' element={<GalleryPage />} />
+      <Route path='/research' element={<ResearchPage />} />
+      <Route path='/resourses' element={<ResoursePage />} />
+      <Route path='/staffs' element={<StaffPage />} />
     </Routes>
+    <Footer />
   </div>;
 }
 
