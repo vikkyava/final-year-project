@@ -7,7 +7,7 @@ function News({ viewAll = false }) {
   const visibleNews = viewAll ? news : news.slice(0, 3);
 
   return (
-    <div className="flex items-center flex-col gap-16">
+    <div className="flex items-center flex-col gap-12">
       <div className="flex gap-4 items-center justify-center flex-wrap">
         {visibleNews.map((newsItem, index) => (
           <NewsCard key={index} {...newsItem} />

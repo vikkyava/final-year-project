@@ -7,7 +7,7 @@ function Events({ viewAll = false }) {
   const visibleEvents = viewAll ? events : events.slice(0, 3);
 
   return (
-    <div className="flex items-center flex-col gap-16">
+    <div className="flex items-center flex-col gap-12">
       <div className="flex gap-4 items-center justify-center">
         {visibleEvents.map((eventsItem, index) => (
           <EventCard key={index} {...eventsItem} />
