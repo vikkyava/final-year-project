@@ -1,5 +1,5 @@
 function AboutPage() {
-    return <div>About Page</div>;
+    return <div className="max-w-6xl mx-auto">About Page</div>;
 }
 
 export default AboutPage;

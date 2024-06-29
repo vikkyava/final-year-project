@@ -1,49 +1,23 @@
 import { Link } from "react-router-dom";
 
-import PlaceIcon from '@mui/icons-material/Place';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import XIcon from '@mui/icons-material/X';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-
 function MainNavigation() {
   return (
-    <header className="p-5">
-      <div className="flex items-center border-b py-5 text-xs justify-between gap-4 px-4">
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <PlaceIcon className="w-3 h-3"/>
-            <span>Malete, Kwara State, Nigeria</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <PhoneIcon />
-            <span>+234-813-456-7890</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <EmailIcon />
-            <span>ecedept@domain.com</span>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <a href="https://facebook.com" className="text-black-400 hover:text-gray-400">
-            <XIcon className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"/>
-          </a>
-          <a href="https://facebook.com" className="text-blue-400 hover:text-gray-400">
-          <FacebookIcon className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"/>
-          </a>
-          <a href="https://facebook.com" className="text-blue-700 hover:text-gray-400">
-          <LinkedInIcon className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"/>
-          </a>
-          <a href="https://facebook.com" className="text-red-500 hover:text-gray-400">
-          <YouTubeIcon className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"/>
-          </a>
+    <header className="w-full">
+      <div className="bg-green-400 py-9">
+        <div className="max-w-6xl mx-auto">
+          <img src="/" alt="Kwasu" />
         </div>
       </div>
-      <nav className="flex items-center justify-between gap-3 pt-8 px-10">
-        <div className="">NAEES Logo</div>
-        <ul className="flex items-center gap-6">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl mt-3">
+          <a href="/" >Department of Electrical and Computer Engineering</a>
+        </h2>
+        <h3 className="text-lg">
+          <a href="https://kwasu.edu.ng/of-engineering-and-technology/" title="Faculty of  Engineering and Technology">Faculty of  Engineering and Technology</a>
+        </h3>
+      </div>
+      <nav className="flex items-center justify-between gap-3 pt-8 max-w-6xl mx-auto">
+        <ul className="flex gap-6">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -69,6 +43,12 @@ function MainNavigation() {
             <Link to="/staffs">Staffs</Link>
           </li>
         </ul>
+        <div className="">
+          <ul className="flex gap-6">
+            <li> Contact</li>
+            <li>Apply</li>
+          </ul>
+        </div>
       </nav>
     </header>
   );

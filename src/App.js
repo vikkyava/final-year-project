@@ -12,7 +12,7 @@ import MainNavigation from './components/layout/MainNavigation';
 import Footer from './components/layout/Footer';
 
 function App() {
-  return <div className='w-full max-w-6xl mx-auto'>
+  return <div>
     <MainNavigation />
     <Routes>
       <Route path='/' element={<HomePage />} />

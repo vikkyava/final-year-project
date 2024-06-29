@@ -2,7 +2,7 @@ import Slideshow from '../components/Slideshow';
 import IntroSection from '../components/IntroCard';
 
 function HomePage() {
-    return <>
+    return <div className='max-w-6xl mx-auto'>
         <Slideshow />
         <IntroSection />
         <div className='bg-gradient-to-r from-slate-800 via-slate-500 to-slate-700 h-60 outline-red-200 relative'>
@@ -16,7 +16,7 @@ function HomePage() {
                 </div>
             </div>
         </div>
-    </>;
-}
+    </div>
+};
 
 export default HomePage;

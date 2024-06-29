@@ -11,7 +11,7 @@ function StaffPage() {
           facebook: 'https://facebook.com/johndoe',
         },
     };
-    return <div className="h-screen bg-gray-100">
+    return <div className="h-screen bg-gray-100 max-w-6xl mx-auto">
         <div className="flex justify-center items-center">
             <StaffCard
             profilePicture={staffMember.profilePicture}

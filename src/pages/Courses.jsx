@@ -2,7 +2,7 @@ import CourseCard from "../components/CourseInfoCard";
 
 
 function CoursePage() {
-    return <div>
+    return <div className="max-w-6xl mx-auto">
         <CourseCard 
             imageSrc="https://via.placeholder.com/150"
             date="June 13, 2024"
