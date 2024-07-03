@@ -1,22 +1,8 @@
 import { Link } from "react-router-dom";
 
-function MainNavigation() {
-  return (
-    <header className="w-full">
-      <div className="bg-green-400 py-9">
-        <div className="max-w-6xl mx-auto">
-          <img src="/" alt="Kwasu" />
-        </div>
-      </div>
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl mt-3">
-          <a href="/" >Department of Electrical and Computer Engineering</a>
-        </h2>
-        <h3 className="text-lg">
-          <a href="https://kwasu.edu.ng/of-engineering-and-technology/" title="Faculty of  Engineering and Technology">Faculty of  Engineering and Technology</a>
-        </h3>
-      </div>
-      <nav className="flex items-center justify-between gap-3 pt-8 max-w-6xl mx-auto">
+function Navigation() {
+    return (
+        <nav className="flex items-center justify-between gap-3 pt-8 pb-6 max-w-6xl mx-auto">
         <ul className="flex gap-6">
           <li>
             <Link to="/">Home</Link>
@@ -50,8 +36,8 @@ function MainNavigation() {
           </ul>
         </div>
       </nav>
-    </header>
-  );
-}
+    )
+};
 
-export default MainNavigation;
+
+export default Navigation;
