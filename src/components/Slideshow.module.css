@@ -28,13 +28,17 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: red;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ca8a04;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 2rem;
     z-index: 1;
+}
+
+.navbtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .prevbtn {

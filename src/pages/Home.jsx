@@ -43,7 +43,7 @@ function HomePage() {
             type="button"
             className={`${
               highlightTab === "events" ? "bg-white" : "bg-green-500 text-white"
-            } w-40 p-4`}
+            } w-50 p-4`}
             onClick={() => setHighlightTab("events")}
           >
             Upcoming Events
