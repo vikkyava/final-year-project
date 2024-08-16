@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom';
 
 import './index.css';
 import App from './App';
+import { LayoutContextProvider } from './contexts/useLayoutContext';
 
 
 
@@ -13,7 +14,9 @@ const root = createRoot(domNode);
 
 root.render(
     <BrowserRouter>
-        <App />
+        <LayoutContextProvider>
+            <App />
+        </LayoutContextProvider>
     </BrowserRouter>
 );
 

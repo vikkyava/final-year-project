@@ -52,7 +52,7 @@ const ContactForm = () => {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#bb9457]"
             placeholder="Your Name"
           />
         </div>
@@ -65,7 +65,7 @@ const ContactForm = () => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#bb9457]"
             placeholder="Your Email"
           />
         </div>
@@ -77,7 +77,7 @@ const ContactForm = () => {
             id="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#bb9457]"
             placeholder="Your Message"
             rows="5"
           />
@@ -85,7 +85,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-1/3 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-900 transition duration-300"
+          className="w-1/3 border-2 border-[#bb9457] text-dark-gray py-2 px-4 rounded-lg hover:underline transition duration-300"
         >
           Submit
         </button>

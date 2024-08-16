@@ -1,19 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import Navbar from "./Navbar";
+import { useLayoutContext } from "../../contexts/useLayoutContext";
 
 function MainHeader() {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const { setIsNavbarOpen } = useLayoutContext();
 
   const toggleNavbar = () => {
-    setIsNavbarOpen(!isNavbarOpen);
+    setIsNavbarOpen((prevState) => !prevState);
   };
 
   return (
     <header>
-      <div className="bg-[#7CB518] py-9">
+      <div className="bg-green-600 py-6">
         <div className="max-w-6xl mx-auto flex justify-between">
-          <img src="/" alt="Kwasu" />
+          <div className="flex gap-1">
+            <img
+              src="/assets\kwasu_logo-removebg-preview.png"
+              alt="Kwasu"
+              className="w-16 h-16"
+            />
+            <img
+              src="/assets\naees_logo.jpg"
+              alt="NAEES"
+              className="w-16 h-16 rounded-full"
+            />
+          </div>
           <div className="md:hidden">
             <button onClick={toggleNavbar}>
               <MenuIcon />
@@ -34,7 +45,6 @@ function MainHeader() {
           </a>
         </h3>
       </div>
-      {isNavbarOpen && <Navbar />}
     </header>
   );
 }

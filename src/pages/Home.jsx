@@ -4,6 +4,7 @@ import IntroSection from "../components/IntroCard";
 import stats from "../content/stats";
 import News from "../components/News";
 import Events from "../components/Events";
+import CourseCard from "../components/CourseInfoCard";
 
 function HomePage() {
   const [highlightTab, setHighlightTab] = useState("news");
@@ -11,19 +12,22 @@ function HomePage() {
     <>
       <Slideshow />
       <IntroSection />
-      <div className="grid grid-cols-4 gap-4 py-20 px-4">
-        {stats.map((stat, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-5 justify-center p-4 text-center"
-          >
-            <i className={`${stat.icon} text-4xl text-green-500`}></i>
-            <div className="flex flex-col items-start">
-              <div className="text-4xl">{stat.value}</div>
-              <div className="text-lg">{stat.title}</div>
+      <div className="mt-20 py-20">
+        <h1 className="text-3xl mx-auto text-center mb-8">ECE By The Numbers</h1>
+        <div className="grid grid-cols-4 gap-4 px-4">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-5 justify-center p-4 text-center"
+            >
+              <i className={`${stat.icon} text-4xl text-green-500`}></i>
+              <div className="flex flex-col items-start">
+                <div className="text-4xl">{stat.value}</div>
+                <div className="text-lg">{stat.title}</div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="bg-gradient-to-r from-slate-800 via-slate-500 to-slate-700 h-60 outline-red-200 relative">
         <div className="text-4xl  text-white absolute top-20 left-1/2 transform -translate-x-1/2">
@@ -52,6 +56,38 @@ function HomePage() {
       </div>
       <div className="py-20 px-4">
         {highlightTab === "news" ? <News /> : <Events />}
+      </div>
+      <div className="grid grid-cols-2 gap-2 m-0">
+        <CourseCard 
+              imageSrc="https://via.placeholder.com/150"
+              date="June 13, 2024"
+              title="Card Title"
+              description="This is a description of the card. It provides some brief information about the content of the card
+              hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
+              riejejdutyhffncbvhfdjdjkksieufyfh
+              fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
+              hdhdjhfjfj."
+        />
+        <CourseCard 
+            imageSrc="https://via.placeholder.com/150"
+            date="June 13, 2024"
+            title="Card Title"
+            description="This is a description of the card. It provides some brief information about the content of the card
+            hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
+            riejejdutyhffncbvhfdjdjkksieufyfh
+            fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
+            hdhdjhfjfj."
+        />
+        <CourseCard 
+            imageSrc="https://via.placeholder.com/150"
+            date="June 13, 2024"
+            title="Card Title"
+            description="This is a description of the card. It provides some brief information about the content of the card
+            hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
+            riejejdutyhffncbvhfdjdjkksieufyfh
+            fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
+            hdhdjhfjfj."
+        />
       </div>
     </>
   );

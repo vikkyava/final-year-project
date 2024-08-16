@@ -3,9 +3,9 @@ import classes from './Slideshow.module.css';
 
 const Slideshow = () => {
     const slides = [
-        { url: 'https://example.com/path_to_image1.jpg', text: 'Your Bright Future is Our Mission' },
-        { url: 'https://example.com/path_to_image2.jpg', text: 'Education is Life' },
-        { url: 'https://example.com/path_to_image3.jpg', text: 'Helping Our Students Fulfill Their Potential' }
+        { url: '/assets/gallery_11.jpg', text: 'Your Bright Future is Our Mission' },
+        { url: '/assets/gallery_8.jpg', text: 'Education is Life' },
+        { url: '/assets/gallery_12.jpg', text: 'Helping Our Students Fulfill Their Potential' }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,8 +40,8 @@ const Slideshow = () => {
                     {slides[currentIndex].text}
                 </div>
             </div>
-            <button className={`${classes.navbtn} ${classes.prevbtn}`} onClick={goToPrevious}>❮</button>
-            <button className={`${classes.navbtn} ${classes.nextbtn}`} onClick={goToNext}>❯</button>
+            <button className={`${classes.navbtn} ${classes.prevbtn} transition ease duration-500`} onClick={goToPrevious}>❮</button>
+            <button className={`${classes.navbtn} ${classes.nextbtn} transition ease duration-500`} onClick={goToNext}>❯</button>
             <div className={classes.indicators}>
                 {slides.map((_, index) => (
                     <span

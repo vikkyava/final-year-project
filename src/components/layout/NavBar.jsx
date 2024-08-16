@@ -1,60 +1,32 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import CloseIcon from "@mui/icons-material/Close";
+import { useLayoutContext } from "../../contexts/useLayoutContext";
+import AboutDropdown from "../DropDown";
 
 //bg-gray-800 p-4 flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4
 
-function Navbar({ className }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+function Navbar() {
+  const { isNavbarOpen, setIsNavbarOpen } = useLayoutContext();
 
   return (
     <nav
-      className={`flex md:flex-row items-center justify-between gap-3 pt-8 pb-6 max-w-6xl mx-auto flex-col space-y-3 cursor-pointer ${className}`}
+      className={`items-center fixed md:relative inset-0 left-1/3 md:inset-auto px-6 md:px-0 bg-white justify-between gap-3 pt-12 md:pt-8 pb-6 max-w-6xl mx-auto flex-col 
+        space-y-3 cursor-pointer ${
+          isNavbarOpen ? "flex" : "hidden md:flex"
+        } md:flex-row`}
     >
-      <ul className="flex gap-6 md:flex-row flex-col text-[#011936]">
+      <button
+        onClick={() => setIsNavbarOpen(false)}
+        className="md:hidden flex items-center justify-center absolute right-5 top-5"
+      >
+        <CloseIcon />
+      </button>
+      <ul className="flex gap-6 md:flex-row flex-col text-[#011936] w-full md:w-fit">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li className="relative">
-          <Link to="/about" className="hover:text-gray-400">
-            About
-          </Link>
-          <span onClick={toggleDropdown} className="text-yellow-600">
-            {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-          </span>
-          {isOpen && (
-            <ul className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
-              <li>
-                <a
-                  href="/service1"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Service 1
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/service2"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Service 2
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/service3"
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Service 3
-                </a>
-              </li>
-            </ul>
-          )}
+          <AboutDropdown />
         </li>
         <li>
           <Link to="/courses">Academics</Link>
@@ -72,7 +44,7 @@ function Navbar({ className }) {
           <Link to="/gallery">Gallery</Link>
         </li>
       </ul>
-      <div className="">
+      <div className="w-full md:w-fit">
         <ul className="flex gap-6 md:flex-row sm:flex-col">
           <li>
             <Link to="/contact">Contact</Link>

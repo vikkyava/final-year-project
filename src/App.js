@@ -10,6 +10,7 @@ import StaffPage from "./pages/Staff";
 import MainHeader from "./components/layout/MainHeader";
 import Navbar from "./components/layout/Navbar";
 import ContactForm from "./pages/Contact"
+import AdmissionSection from "./components/Admission";
 import Footer from "./components/layout/Footer";
 
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <div>
       <MainHeader />
-      <Navbar className='hidden md:flex' />
+      <Navbar />
       <div className="w-[90%] max-w-screen-2xl mx-auto">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -27,9 +28,10 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/staffs" element={<StaffPage />} />
-          <Route path="/contact" element={ <ContactForm /> } />
+          <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </div>
+      <AdmissionSection />
       <Footer />
     </div>
   );

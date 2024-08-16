@@ -4,7 +4,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 function CourseCard({ imageSrc, date, title, description }) {
   return (
-    <div className="flex border rounded-lg overflow-hidden shadow-lg max-w-md mx-auto my-20">
+    <div className="flex border rounded-lg overflow-hidden shadow-lg max-w-md mx-auto">
       <img src={imageSrc} alt={title} className="w-1/3 object-cover" />
       <div className="w-2/3 p-4 flex flex-col justify-between h-auto">
         <div className="flex items-center text-gray-600 mb-2">

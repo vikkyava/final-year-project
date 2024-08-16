@@ -14,11 +14,11 @@ function News({ viewAll = false }) {
         ))}
       </div>
       {news?.length > 3 && !viewAll && (
-        <div className="h-8 px-5 bg-green-500 rounded-2xl flex items-center">
-          <Link to="/news-and-events" className="text-white">
+        <button className="h-8 px-5 border-2 border-[#bb9457] rounded-lg  text-dark-gray flex items-center hover:underline">
+          <Link to="/news-and-events">
             View All News
           </Link>
-        </div>
+        </button>
       )}
     </div>
   );
