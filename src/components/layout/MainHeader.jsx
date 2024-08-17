@@ -10,9 +10,9 @@ function MainHeader() {
   };
 
   return (
-    <header>
-      <div className="bg-green-600 py-6">
-        <div className="max-w-6xl mx-auto flex justify-between">
+    <header className="w-full max-w-screen-2xl mx-auto">
+      <div className="bg-green-600 py-6 px-5">
+        <div className="mx-auto flex justify-between">
           <div className="flex gap-1">
             <img
               src="/assets\kwasu_logo-removebg-preview.png"
@@ -32,7 +32,7 @@ function MainHeader() {
           </div>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto w-[90%] md:w-full">
         <h2 className="text-3xl font-medium mt-3 text-dark-gray">
           <a href="/">Department of Electrical and Computer Engineering</a>
         </h2>

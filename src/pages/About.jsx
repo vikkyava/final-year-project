@@ -2,7 +2,7 @@ import DownloadButton from "../components/DownloadButton";
 
 function AboutPage() {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className=" mx-auto">
       <h1 className="text-3xl text-dark-gray mb-10">Welcome from the Chair</h1>
       <div className="flex gap-8">
         <img src="/assets/staff_img_1.jpg" alt="HOD" className="w-1/4" />

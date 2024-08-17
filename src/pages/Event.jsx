@@ -2,7 +2,7 @@ import EventCard from "../components/EventCard";
 
 
 function EventPage() {
-    return <div className="max-w-6xl mx-auto">
+    return <div className=" mx-auto">
         <EventCard
         imageSrc="https://via.placeholder.com/300"
         title="Sample Event"

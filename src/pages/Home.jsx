@@ -12,9 +12,9 @@ function HomePage() {
     <>
       <Slideshow />
       <IntroSection />
-      <div className="mt-20 py-20">
+      <div className="py-20">
         <h1 className="text-3xl mx-auto text-center mb-8">ECE By The Numbers</h1>
-        <div className="grid grid-cols-4 gap-4 px-4">
+        <div className="md:grid flex flex-col grid-cols-4 gap-4">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -54,10 +54,10 @@ function HomePage() {
           </button>
         </div>
       </div>
-      <div className="py-20 px-4">
+      <div className="py-20 ">
         {highlightTab === "news" ? <News /> : <Events />}
       </div>
-      <div className="grid grid-cols-2 gap-2 m-0">
+      <div className="flex flex-wrap gap-5 py-20">
         <CourseCard 
               imageSrc="https://via.placeholder.com/150"
               date="June 13, 2024"

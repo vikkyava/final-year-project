@@ -3,7 +3,7 @@ import XIcon from '@mui/icons-material/X';
 
 function Footer() {
   return (
-    <footer className="bg-green-600 text-dark-gray py-8 w-full">
+    <footer className="bg-green-600 text-dark-gray py-8 w-full max-w-screen-2xl mx-auto">
       <div className="container p-4 flex justify-around flex-col md:flex-row">
         {/* Description */}
         <div className="mb-8 w-80">

@@ -8,9 +8,40 @@ import AboutDropdown from "../DropDown";
 function Navbar() {
   const { isNavbarOpen, setIsNavbarOpen } = useLayoutContext();
 
+  const navLinks = [
+    {
+      key: 'Home',
+      content: (<Link to="/">Home</Link>)
+    },
+    {
+      key: 'About',
+      content: (<AboutDropdown />)
+    },
+    {
+      key: 'Academics',
+      content: (<Link to="/courses">Academics</Link>)
+    },
+    {
+      key: 'Research',
+      content: (<Link to="/research">Research</Link>)
+    },
+    {
+      key: 'Updates',
+      content: (<Link to="/news-and-events">News and Events</Link>)
+    },
+    {
+      key: 'Staffs',
+      content: (<Link to="/staffs">Staffs</Link>)
+    },
+    {
+      key: 'Gallery',
+      content: (<Link to="/gallery">Gallery</Link>)
+    }
+  ]
+
   return (
     <nav
-      className={`items-center fixed md:relative inset-0 left-1/3 md:inset-auto px-6 md:px-0 bg-white justify-between gap-3 pt-12 md:pt-8 pb-6 max-w-6xl mx-auto flex-col 
+      className={`w-[90%] max-w-screen-2xl z-[999] items-center fixed md:relative inset-0 left-1/3 md:inset-auto px-6 md:px-0 bg-white justify-between gap-3 pt-12 md:pt-8 pb-6  mx-auto flex-col 
         space-y-3 cursor-pointer ${
           isNavbarOpen ? "flex" : "hidden md:flex"
         } md:flex-row`}
@@ -22,38 +53,23 @@ function Navbar() {
         <CloseIcon />
       </button>
       <ul className="flex gap-6 md:flex-row flex-col text-[#011936] w-full md:w-fit">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li className="relative">
-          <AboutDropdown />
-        </li>
-        <li>
-          <Link to="/courses">Academics</Link>
-        </li>
-        <li>
-          <Link to="/research">Research</Link>
-        </li>
-        <li>
-          <Link to="/news-and-events">News and Events</Link>
-        </li>
-        <li>
-          <Link to="/staffs">Staffs</Link>
-        </li>
-        <li>
-          <Link to="/gallery">Gallery</Link>
-        </li>
+        {navLinks.map(({key, content}) => (
+          <li key={key}>
+            <button onClick={() => setIsNavbarOpen(false)} className="cursor-pointer">{content}</button>
+          </li>
+        ))}
       </ul>
       <div className="w-full md:w-fit">
         <ul className="flex gap-6 md:flex-row sm:flex-col">
           <li>
-            <Link to="/contact">Contact</Link>
+            <button onClick={() => setIsNavbarOpen(false)} className="cursor-pointer"><Link to="/contact">Contact</Link></button>
           </li>
           <li>
             <a
               href="https://portal.kwasu.edu.ng/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setIsNavbarOpen(false)}
             >
               Apply
             </a>
