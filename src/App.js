@@ -8,7 +8,7 @@ import GalleryPage from "./pages/Gallery";
 import ResearchPage from "./pages/Research";
 import StaffPage from "./pages/Staff";
 import MainHeader from "./components/layout/MainHeader";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/NavBar";
 import ContactForm from "./pages/Contact"
 import AdmissionSection from "./components/Admission";
 import Footer from "./components/layout/Footer";
