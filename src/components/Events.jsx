@@ -9,9 +9,9 @@ function Events({ viewAll = false }) {
   return (
     <div className="flex items-center flex-col gap-12">
       <div className="flex gap-4 items-center justify-center">
-        {visibleEvents.map((eventsItem, index) => (
+        {visibleEvents.length > 0 ? visibleEvents.map((eventsItem, index) => (
           <EventCard key={index} {...eventsItem} />
-        ))}
+        )) : (<div>No upcoming event</div>)}
       </div>
       {events.length > 3 && !viewAll && (
         <div className="h-8 px-5 bg-green-500 rounded-2xl flex items-center">
