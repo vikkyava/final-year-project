@@ -67,7 +67,7 @@ export default function LevelOne() {
           {harmarttanSemesterCourses.map((course, index) => (
             <StyledTableRow key={course.title}>
               <StyledTableCell component="th" scope="row" align='center'>
-                {index}
+                {index + 1}
               </StyledTableCell>
               <StyledTableCell align="center">{course.code}</StyledTableCell>
               <StyledTableCell align="center">{course.title}</StyledTableCell>
@@ -95,7 +95,7 @@ export default function LevelOne() {
           {rainSemesterCourses.map((course, index) => (
             <StyledTableRow key={course.title}>
               <StyledTableCell component="th" scope="row" align='center'>
-                {index}
+                {index + 1}
               </StyledTableCell>
               <StyledTableCell align="center">{course.code}</StyledTableCell>
               <StyledTableCell align="center">{course.title}</StyledTableCell>
