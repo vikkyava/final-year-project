@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function IntroSection() {
   return (
@@ -21,7 +22,7 @@ function IntroSection() {
             advancements.
           </p>
           <button className="text-dark-gray border-2 border-[#bb9457] px-4 py-2 rounded-lg hover:underline">
-            Learn More
+            <Link to="/about">Learn More</Link>
           </button>
         </div>
         <div className="flex-1">

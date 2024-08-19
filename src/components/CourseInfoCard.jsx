@@ -21,9 +21,9 @@ function CourseCard({ imageSrc, date, title, description }) {
             ? `${description.slice(0, 100)}...`
             : description}
         </p>
-        {description.lenth > 100 && (
+        {description.length > 100 && (
           <button
-            className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+            className="mt-4 border-2 border-[#bb9457] text-dark-gray py-2 px-2 rounded hover:underline"
             onClick={handleCardOpen}
           >
             Read More
