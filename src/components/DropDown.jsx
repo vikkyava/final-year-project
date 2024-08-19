@@ -18,6 +18,25 @@ export default function AboutDropdown() {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
+  const dropdownItems = [
+    {
+      url: "#welcome",
+      title: "Welcome from the Chair",
+    },
+    {
+      url: "#overview",
+      title: "Program overview",
+    },
+    {
+      url: "/about#ece",
+      title: "About ECE",
+    },
+    {
+      url: "/service3",
+      title: "ECE Laboratory/Workshop",
+    },
+  ];
+
   return (
     <div>
       <button
@@ -41,38 +60,17 @@ export default function AboutDropdown() {
         }}
       >
         <ul className="w-72 bg-white rounded-md shadow-lg py-1 text-md">
-          <li>
-            <a
-              href="/service1"
-              className="block px-4 py-2 text-[#bb9457] font-semibold hover:bg-gray-100"
-            >
-              Welcome from the Chair
-            </a>
-          </li>
-          <li>
-            <a
-              href="/service2"
-              className="block px-4 py-2 text-[#bb9457] font-semibold hover:bg-gray-100"
-            >
-              Program overview
-            </a>
-          </li>
-          <li>
-            <a
-              href="/service3"
-              className="block px-4 py-2 text-[#bb9457] font-semibold hover:bg-gray-100"
-            >
-              About ECE
-            </a>
-          </li>
-          <li>
-            <a
-              href="/service3"
-              className="block px-4 py-2 text-[#bb9457] font-semibold hover:bg-gray-100"
-            >
-              ECE Laboratory/Workshop
-            </a>
-          </li>
+          {dropdownItems.map(({ url, title }) => (
+            <li>
+              <a
+                href={url}
+                onClick={handleClose}
+                className="block px-4 py-2 text-[#bb9457] font-semibold hover:bg-gray-100"
+              >
+                {title}
+              </a>
+            </li>
+          ))}
         </ul>
       </Popover>
     </div>

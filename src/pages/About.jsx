@@ -3,7 +3,7 @@ import DownloadButton from "../components/DownloadButton";
 function AboutPage() {
   return (
     <div className=" mx-auto">
-      <h1 className="text-3xl text-dark-gray mb-10">Welcome from the Chair</h1>
+      <h1 className="text-3xl text-dark-gray mb-10" id="welcome">Welcome from the Chair</h1>
       <div className="flex flex-col md:flex-row gap-8">
         <img src="/assets/staff_img_1.jpg" alt="HOD" className="w-1/4" />
         <p className="leading-8">
@@ -35,7 +35,7 @@ function AboutPage() {
         </p>
       </div>
       <div className="mt-20 h-3 bg-gray-200 rounded-2xl"></div>
-      <h2 className="text-3xl font-bold">Programme Overview</h2>
+      <h2 className="text-3xl font-bold" id="overview">Programme Overview</h2>
       <p className="mt-8 leading-7">
         The Electrical and Computer Engineering (ECE) program at Kwara State
         University (KWASU) is designed to provide a solid foundation in both
@@ -152,7 +152,7 @@ function AboutPage() {
         </ul>
       </div>
       <div className="mt-20 h-3 bg-gray-200 rounded-2xl"></div>
-      <h2 className="text-3xl mt-10">About ECE</h2>
+      <h2 className="text-3xl mt-10" id="ece">About ECE</h2>
     </div>
   );
 }
