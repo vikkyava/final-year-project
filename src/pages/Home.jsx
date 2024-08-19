@@ -59,9 +59,9 @@ function HomePage() {
       </div>
       <div className="flex flex-wrap gap-5 py-20">
         <CourseCard 
-              imageSrc="https://via.placeholder.com/150"
-              date="June 13, 2024"
-              title="Card Title"
+              imageSrc="/assets/communications.jpg"
+              // date="June 13, 2024"
+              title="Communications Engineering"
               description="This is a description of the card. It provides some brief information about the content of the card
               hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
               riejejdutyhffncbvhfdjdjkksieufyfh
@@ -69,9 +69,9 @@ function HomePage() {
               hdhdjhfjfj."
         />
         <CourseCard 
-            imageSrc="https://via.placeholder.com/150"
-            date="June 13, 2024"
-            title="Card Title"
+            imageSrc="/assets/control.jpg"
+            // date="June 13, 2024"
+            title="Control Engineering"
             description="This is a description of the card. It provides some brief information about the content of the card
             hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
             riejejdutyhffncbvhfdjdjkksieufyfh
@@ -79,9 +79,9 @@ function HomePage() {
             hdhdjhfjfj."
         />
         <CourseCard 
-            imageSrc="https://via.placeholder.com/150"
-            date="June 13, 2024"
-            title="Card Title"
+            imageSrc="/assets/power.jpg"
+            // date="June 13, 2024"
+            title="Power system and Electrical Machine"
             description="This is a description of the card. It provides some brief information about the content of the card
             hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
             riejejdutyhffncbvhfdjdjkksieufyfh

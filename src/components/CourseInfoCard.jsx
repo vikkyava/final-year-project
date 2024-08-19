@@ -1,6 +1,5 @@
 import React from 'react';
 // import { FaCalendarAlt } from 'react-icons/fa';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 function CourseCard({ imageSrc, date, title, description }) {
   return (
@@ -8,7 +7,6 @@ function CourseCard({ imageSrc, date, title, description }) {
       <img src={imageSrc} alt={title} className="w-1/3 object-cover" />
       <div className="w-2/3 p-4 flex flex-col justify-between h-auto">
         <div className="flex items-center text-gray-600 mb-2">
-          <CalendarMonthIcon className="mr-2" />
           <span>{date}</span>
         </div>
         <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
