@@ -10,7 +10,7 @@ function MainHeader() {
   };
 
   return (
-    <header className="w-full max-w-screen-2xl mx-auto">
+    <header className="w-full md:w-[90%] max-w-screen-2xl mx-auto">
       <div className="bg-green-600 py-6 px-5">
         <div className="mx-auto flex justify-between">
           <div className="flex gap-1">

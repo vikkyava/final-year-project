@@ -1,9 +1,9 @@
 import React from "react";
-import XIcon from '@mui/icons-material/X';
+import XIcon from "@mui/icons-material/X";
 
 function Footer() {
   return (
-    <footer className="bg-green-600 text-dark-gray py-8 w-full max-w-screen-2xl mx-auto">
+    <footer className="bg-green-600 text-dark-gray py-8 md:w-[90%] w-full max-w-screen-2xl mx-auto">
       <div className="container p-4 flex justify-around flex-col md:flex-row">
         {/* Description */}
         <div className="mb-8 w-80">
@@ -41,10 +41,7 @@ function Footer() {
               </a>
             </li>
             <li className="mt-2">
-              <a
-                href="/news-and-events"
-                className="hover:underline"
-              >
+              <a href="/news-and-events" className="hover:underline">
                 Events
               </a>
             </li>
@@ -59,9 +56,15 @@ function Footer() {
         {/* Contact Info */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold">Contact Us</h2>
-          <p className="mt-5 text-gray-800 font-semibold">Kwara State, Malete</p>
-          <p className="mt-2 text-gray-800 font-semibold">Email: contact@ourschool.edu</p>
-          <p className="mt-2 text-gray-800 font-semibold">Phone: (123) 456-7890</p>
+          <p className="mt-5 text-gray-800 font-semibold">
+            Kwara State, Malete
+          </p>
+          <p className="mt-2 text-gray-800 font-semibold">
+            Email: hod.ece@kwasu.edu.ng
+          </p>
+          <p className="mt-2 text-gray-800 font-semibold">
+            Phone: (123) 456-7890
+          </p>
         </div>
 
         {/* Social Links */}

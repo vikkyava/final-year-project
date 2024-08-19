@@ -5,13 +5,13 @@ const stats = [
     icon: "fas fa-users",
   },
   {
-    title: "Courses Offered",
-    value: 20,
+    title: "Courses Option",
+    value: 3,
     icon: "fas fa-book-open",
   },
   {
-    title: "Certified Teachers",
-    value: 50,
+    title: "Certified Staff",
+    value: 19,
     icon: "fas fa-user-tie",
   },
   {

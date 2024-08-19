@@ -20,12 +20,12 @@ function IntroSection() {
             to excel in their careers and contribute meaningfully to technological
             advancements.
           </p>
-          <button className="text-dark-gray border-2 border-[#bb9457] px-4 py-2 rounded-lg hover:bg-blue-600 underline">
+          <button className="text-dark-gray border-2 border-[#bb9457] px-4 py-2 rounded-lg hover:underline">
             Learn More
           </button>
         </div>
         <div className="flex-1">
-          <img src="///" alt="" className="w-full aspect-video" />
+          <img src="/assets/welcomepicture.png" alt="" className="w-full aspect-video" />
         </div>
       </div>
      </div>

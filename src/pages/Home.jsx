@@ -13,7 +13,9 @@ function HomePage() {
       <Slideshow />
       <IntroSection />
       <div className="py-20">
-        <h1 className="text-3xl mx-auto text-center mb-8">ECE By The Numbers</h1>
+        <h1 className="text-3xl mx-auto text-center mb-8">
+          ECE By The Numbers
+        </h1>
         <div className="md:grid flex flex-col grid-cols-4 gap-4">
           {stats.map((stat, index) => (
             <div
@@ -57,36 +59,31 @@ function HomePage() {
       <div className="py-20 ">
         {highlightTab === "news" ? <News /> : <Events />}
       </div>
+      <h1 className="text-center text-3xl">Course Options</h1>
       <div className="flex flex-wrap gap-5 py-20">
-        <CourseCard 
-              imageSrc="/assets/communications.jpg"
-              // date="June 13, 2024"
-              title="Communications Engineering"
-              description="This is a description of the card. It provides some brief information about the content of the card
-              hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
-              riejejdutyhffncbvhfdjdjkksieufyfh
-              fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
-              hdhdjhfjfj."
+        <CourseCard
+          imageSrc="/assets/communications.jpg"
+          // date="June 13, 2024"
+          title="Communications Engineering"
+          description="Communication Engineering in the ECE (Electrical and Computer Engineering) Department at Kwara State University focuses on the study and application of communication technologies. The course covers fundamental concepts of analog and digital communication, signal processing, wireless communication, and network systems. Students learn about the design, analysis, and implementation of communication systems used in various industries, including telecommunications, broadcasting, and data networks.
+
+          The curriculum is designed to equip students with both theoretical knowledge and practical skills, preparing them for careers in communication engineering, telecommunications, and related fields. Students also explore emerging trends in communication technology, such as 5G networks, IoT, and satellite communication."
         />
-        <CourseCard 
-            imageSrc="/assets/control.jpg"
-            // date="June 13, 2024"
-            title="Control Engineering"
-            description="This is a description of the card. It provides some brief information about the content of the card
-            hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
-            riejejdutyhffncbvhfdjdjkksieufyfh
-            fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
-            hdhdjhfjfj."
+        <CourseCard
+          imageSrc="/assets/control.jpg"
+          // date="June 13, 2024"
+          title="Control Engineering"
+          description="Control Engineering in the ECE (Electrical and Computer Engineering) Department at Kwara State University focuses on the analysis and design of control systems that govern the behavior of dynamic systems. The course covers key concepts such as system modeling, feedback control, stability analysis, and the implementation of control strategies for various engineering applications.
+
+          Students gain a deep understanding of how to design and optimize control systems for different industries, including automotive, aerospace, manufacturing, and robotics. The curriculum includes both theoretical foundations and hands-on experience with tools and technologies used in modern control engineering. Graduates are well-prepared for careers in automation, robotics, and systems engineering, with a strong ability to develop solutions that ensure the stability and efficiency of complex systems."
         />
-        <CourseCard 
-            imageSrc="/assets/power.jpg"
-            // date="June 13, 2024"
-            title="Power system and Electrical Machine"
-            description="This is a description of the card. It provides some brief information about the content of the card
-            hfhfhhfhfhfhfhfjffjhjdndhfhfjfuii
-            riejejdutyhffncbvhfdjdjkksieufyfh
-            fbnbcbvnvjdjdhfuryhdhdjfhfueueiejd
-            hdhdjhfjfj."
+        <CourseCard
+          imageSrc="/assets/power.jpg"
+          // date="June 13, 2024"
+          title="Power system and Electrical Machine"
+          description="Power System and Electrical Machine in the ECE (Electrical and Computer Engineering) Department at Kwara State University focuses on the principles and applications of power generation, transmission, distribution, and the operation of electrical machines. The course covers key topics such as power system analysis, electrical machine theory, power electronics, and the integration of renewable energy sources into the grid.
+
+          Students learn about the design, operation, and maintenance of power systems and electrical machines, including transformers, generators, and motors. The curriculum emphasizes both theoretical knowledge and practical skills, preparing students to tackle challenges in the energy sector. Graduates are equipped to work in industries such as power generation, transmission, distribution, and manufacturing, contributing to the development and management of efficient and sustainable electrical systems"
         />
       </div>
     </>

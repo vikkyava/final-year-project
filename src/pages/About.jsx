@@ -4,7 +4,7 @@ function AboutPage() {
   return (
     <div className=" mx-auto">
       <h1 className="text-3xl text-dark-gray mb-10">Welcome from the Chair</h1>
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-8">
         <img src="/assets/staff_img_1.jpg" alt="HOD" className="w-1/4" />
         <p className="leading-8">
           Welcome to the Department of Electrical and Computer Engineering at

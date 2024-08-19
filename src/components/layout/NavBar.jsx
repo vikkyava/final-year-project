@@ -10,34 +10,34 @@ function Navbar() {
 
   const navLinks = [
     {
-      key: 'Home',
-      content: (<Link to="/">Home</Link>)
+      key: "Home",
+      content: <Link to="/">Home</Link>,
     },
     {
-      key: 'About',
-      content: (<AboutDropdown />)
+      key: "About",
+      content: <AboutDropdown />,
     },
     {
-      key: 'Academics',
-      content: (<Link to="/courses">Academics</Link>)
+      key: "Academics",
+      content: <Link to="/courses">Academics</Link>,
     },
     {
-      key: 'Research',
-      content: (<Link to="/research">Research</Link>)
+      key: "Research",
+      content: <Link to="/research">Research</Link>,
     },
     {
-      key: 'Updates',
-      content: (<Link to="/news-and-events">News and Events</Link>)
+      key: "Updates",
+      content: <Link to="/news-and-events">News and Events</Link>,
     },
     {
-      key: 'Staffs',
-      content: (<Link to="/staffs">Staffs</Link>)
+      key: "Staffs",
+      content: <Link to="/staffs">Staffs</Link>,
     },
     {
-      key: 'Gallery',
-      content: (<Link to="/gallery">Gallery</Link>)
-    }
-  ]
+      key: "Gallery",
+      content: <Link to="/gallery">Gallery</Link>,
+    },
+  ];
 
   return (
     <nav
@@ -48,21 +48,31 @@ function Navbar() {
     >
       <button
         onClick={() => setIsNavbarOpen(false)}
-        className="md:hidden flex items-center justify-center absolute right-5 top-5"
+        className="md:hidden flex items-center justify-center absolute"
       >
         <CloseIcon />
       </button>
       <ul className="flex gap-6 md:flex-row flex-col text-[#011936] w-full md:w-fit">
-        {navLinks.map(({key, content}) => (
+        {navLinks.map(({ key, content }) => (
           <li key={key}>
-            <button onClick={() => setIsNavbarOpen(false)} className="cursor-pointer">{content}</button>
+            <button
+              onClick={() => setIsNavbarOpen(false)}
+              className="cursor-pointer"
+            >
+              {content}
+            </button>
           </li>
         ))}
       </ul>
       <div className="w-full md:w-fit">
         <ul className="flex gap-6 md:flex-row sm:flex-col">
           <li>
-            <button onClick={() => setIsNavbarOpen(false)} className="cursor-pointer"><Link to="/contact">Contact</Link></button>
+            <button
+              onClick={() => setIsNavbarOpen(false)}
+              className="cursor-pointer"
+            >
+              <Link to="/contact">Contact</Link>
+            </button>
           </li>
           <li>
             <a
