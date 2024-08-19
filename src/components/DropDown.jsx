@@ -20,11 +20,11 @@ export default function AboutDropdown() {
 
   const dropdownItems = [
     {
-      url: "#welcome",
+      url: "/about#welcome",
       title: "Welcome from the Chair",
     },
     {
-      url: "#overview",
+      url: "/about#overview",
       title: "Program overview",
     },
     {
