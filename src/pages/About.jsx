@@ -3,7 +3,9 @@ import DownloadButton from "../components/DownloadButton";
 function AboutPage() {
   return (
     <div className=" mx-auto">
-      <h1 className="text-3xl text-dark-gray mb-10" id="welcome">Welcome from the Chair</h1>
+      <h1 className="text-3xl text-dark-gray mb-10" id="welcome">
+        Welcome from the Chair
+      </h1>
       <div className="flex flex-col md:flex-row gap-8">
         <img src="/assets/staff_img_1.jpg" alt="HOD" className="w-1/4" />
         <p className="leading-8">
@@ -35,7 +37,9 @@ function AboutPage() {
         </p>
       </div>
       <div className="mt-20 h-3 bg-gray-200 rounded-2xl"></div>
-      <h2 className="text-3xl font-bold" id="overview">Programme Overview</h2>
+      <h2 className="text-3xl font-bold" id="overview">
+        Programme Overview
+      </h2>
       <p className="mt-8 leading-7">
         The Electrical and Computer Engineering (ECE) program at Kwara State
         University (KWASU) is designed to provide a solid foundation in both
@@ -152,7 +156,48 @@ function AboutPage() {
         </ul>
       </div>
       <div className="mt-20 h-3 bg-gray-200 rounded-2xl"></div>
-      <h2 className="text-3xl mt-10" id="ece">About ECE</h2>
+      <h2 className="text-3xl mt-10" id="ece">
+        About ECE
+      </h2>
+      <img
+        src="/assets/weAreECE.jpg"
+        alt="ECE Students"
+        className="w-2/3 block mx-auto my-11"
+      />
+      <div className="h-2 w-7 bg-gray-200 rounded-2xl"></div>
+      <h2 className="text-2xl">Our Mission</h2>
+      <p className="mt-6 leading-7">
+        Our mission is to provide a world-class education in electrical and
+        computer engineering, equipping students with the analytical and
+        problem-solving skills necessary for successful careers. We are
+        committed to excellence in teaching, research, and community engagement,
+        fostering innovation and social responsibility among our students.
+      </p>
+      <div className="h-2 w-7 mt-11 bg-gray-200 rounded-2xl"></div>
+      <h2 className="text-2xl">Our Vision</h2>
+      <p className="mt-6 leading-7">
+        Our vision is to be at the forefront of developments in electrical and
+        computer engineering, continually evolving our curriculum and research
+        to produce graduates who are not only technically proficient but also
+        leaders in their fields, capable of making significant contributions to
+        society.
+      </p>
+      <h2 className="text-2xl mt-16">Brief History</h2>
+      <p className="my-6 leading-7">
+        The Engineering programmes of the Kwara State University commenced a
+        year after the take-off of the university in 2009 with the establishment
+        of the Faculty of Engineering and Technology. The Electrical and
+        Computer Engineering opened its doors for admission that year with two
+        pioneering students drawn from the Faculty of Pure and Applied Science.
+        The department actually took off officially in January 2013 with the
+        appointment of a Head of Department supported by a couple of Senior
+        Adjunct Lecturers and some Assistant Lecturers. Immediately thereafter,
+        the department quickly defined as its goal the production of
+        well-trained engineers who can function well in a broad range of
+        professional activities such as teaching, research and development,
+        design, manufacturing, consultancy services, maintenance, operation,
+        marketing, sales and management.
+      </p>
     </div>
   );
 }

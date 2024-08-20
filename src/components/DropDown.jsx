@@ -31,10 +31,10 @@ export default function AboutDropdown() {
       url: "/about#ece",
       title: "About ECE",
     },
-    {
-      url: "/service3",
-      title: "ECE Laboratory/Workshop",
-    },
+    // {
+    //   url: "/service3",
+    //   title: "ECE Laboratory/Workshop",
+    // },
   ];
 
   return (
