@@ -22,7 +22,7 @@ function NewsCard({ imageSrc, title, date, content }) {
       />
       <div className="relative -top-10 w-full flex">
         <div className="w-11/12 mx-auto bg-white bg-opacity-90 p-4 rounded-lg shadow-lg">
-          <h3 className="text-lg font-bold mb-2">{title}</h3>
+          <h2 className="text-lg font-bold mb-2">{title}</h2>
           <p>
             {content.length > 100 ? `${content.slice(0, 100)}...` : content}
           </p>

@@ -26,9 +26,7 @@ function MainHeader() {
             />
           </div>
           <div className="md:hidden">
-            <button onClick={toggleNavbar}>
-              <MenuIcon />
-            </button>
+            <MenuIcon onClick={toggleNavbar}/>
           </div>
         </div>
       </div>
